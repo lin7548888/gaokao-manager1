@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.aesec.gaokaomanager.modules.gaokao.mapper.UserInfoMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="cn.aesec.gaokaomanager.modules.gaokao.entity.UserInfo">
+		<id column="id" property="id" />
+		<result column="phone_num" property="phoneNum" />
+		<result column="username" property="username" />
+		<result column="password" property="password" />
+		<result column="role" property="role" />
+		<result column="sex" property="sex" />
+		<result column="age" property="age" />
+		<result column="realname" property="realname" />
+		<result column="status" property="status" />
+		<result column="buy_vip" property="buyVip" />
+		<result column="buy_expert" property="buyExpert" />
+		<result column="last_login_time" property="lastLoginTime" />
+		<result column="wx_union_id" property="wxUnionId" />
+		<result column="head_image" property="headImage" />
+		<result column="gk_year" property="gkYear" />
+		<result column="gk_province_id" property="gkProvinceId" />
+		<result column="gk_score" property="gkScore" />
+		<result column="gk_subject" property="gkSubject" />
+		<result column="gk_per_score" property="gkPerScore" />
+		<result column="current_session_id" property="currentSessionId" />
+		<result column="current_device_id" property="currentDeviceId" />
+		<result column="evaluation_score" property="evaluationScore" />
+		<result column="c_time" property="cTime" />
+		<result column="c_user_id" property="cUserId" />
+		<result column="m_time" property="mTime" />
+		<result column="m_user_id" property="mUserId" />
+	</resultMap>
+
+
+    <select id="selectUserInfos" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM a_user_info
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	UserInfo_ID= #{filter.id}
+        </if>
+        ORDER BY UserInfo_ID DESC
+    </select>
+
+</mapper>

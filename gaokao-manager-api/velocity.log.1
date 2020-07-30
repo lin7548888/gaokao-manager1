@@ -1,0 +1,3308 @@
+2020-07-29 17:45:47,702 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 24, column 72] : ${table.mapperName} cannot be resolved.
+2020-07-29 17:45:47,702 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 24, column 115] : ${table.serviceName} cannot be resolved.
+2020-07-29 17:45:47,702 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 27, column 5] : ${table.mapperName} cannot be resolved.
+2020-07-29 17:45:47,702 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 30, column 48] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,702 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 35, column 33] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 1, column 9] : ${package.Service} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 5, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 6, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 6, column 29] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 16, column 18] : ${table.serviceName} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 25, column 41] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,703 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 40, column 26] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 11, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 12, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 13, column 8] : ${package.Service} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 29, column 14] : ${table.controllerName} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 32, column 5] : ${table.serviceName} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 36, column 44] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 44, column 40] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 58, column 42] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,704 - Null reference [template 'package cn.aesec.gaokaomanager.modules.gaokao.controller;
+
+import cn.aesec.gaokaomanager.modules.common.api.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+import com.baomidou.mybatisplus.plugins.Page;
+import cn.aesec.gaokaomanager.modules.common.dto.output.ApiResult;
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${input};
+import ${package.Service}.${service};
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
+/**
+ * <p> ${table.comment} 接口 </p>
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ *
+ */
+@RestController
+@RequestMapping("/api#if(${package.ModuleName})/${package.ModuleName}#end/${table.entityPath}")
+@Api(description = "${table.comment}接口")
+public class ${table.controllerName} extends BaseController {
+
+    @Autowired
+    ${table.serviceName} ${entityPropertyName}Service;
+
+    @PostMapping(value = "/listPage", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表分页", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult listPage(@RequestBody ${formQueryPara} filter) {
+        Page<${entity}> page = new Page<>(filter.getPage(),filter.getLimit());
+        ${entityPropertyName}Service.listPage(page, filter);
+        return ApiResult.ok("获取${table.comment}列表分页成功", page);
+    }
+
+    @PostMapping(value = "/list", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}列表", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult list(@RequestBody ${formQueryPara} filter) {
+        List<${entity}> result = ${entityPropertyName}Service.list(filter);
+        return ApiResult.ok("获取${table.comment}列表成功",result);
+    }
+
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "保存${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult save(@RequestBody ${entity} input) {
+        Integer id = ${entityPropertyName}Service.save(input);
+        return ApiResult.ok("保存${table.comment}成功", id);
+    }
+
+    @PostMapping(value = "/delete", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "删除${table.comment}", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult delete(@RequestBody ${formQueryPara} input) {
+        ${entityPropertyName}Service.deleteById(input.getId());
+        return ApiResult.ok("删除${table.comment}成功");
+    }
+
+    @PostMapping(value = "/getById", produces = "application/json;charset=utf-8")
+    @ApiOperation(value = "获取${table.comment}信息", httpMethod = "POST", response = ApiResult.class)
+    public ApiResult getById(@RequestBody ${formQueryPara} input) {
+        ${entity} entity = ${entityPropertyName}Service.selectById(input.getId());
+        return ApiResult.ok("获取${table.comment}信息成功", entity);
+    }
+
+}', line 65, column 43] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,705 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 3, column 20] : ${package.Mapper} cannot be resolved.
+2020-07-29 17:45:47,705 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 3, column 38] : ${table.mapperName} cannot be resolved.
+2020-07-29 17:45:47,705 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 12, column 45] : ${package.Entity} cannot be resolved.
+2020-07-29 17:45:47,706 - Null reference [template 'package ${package.QueryPara};
+
+import BasePageQuery;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * ${table.comment}查询参数
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ */
+@Data
+@ApiModel(description = "${table.comment}查询参数")
+public class ${formQueryPara} extends BasePageQuery{
+    @ApiModelProperty(value = "id")
+    private int id;
+}
+', line 1, column 9] : ${package.QueryPara} cannot be resolved.
+2020-07-29 17:45:47,706 - Null reference [template 'package ${package.QueryPara};
+
+import BasePageQuery;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * ${table.comment}查询参数
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ */
+@Data
+@ApiModel(description = "${table.comment}查询参数")
+public class ${formQueryPara} extends BasePageQuery{
+    @ApiModelProperty(value = "id")
+    private int id;
+}
+', line 17, column 14] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,706 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 1, column 9] : ${package.Mapper} cannot be resolved.
+2020-07-29 17:45:47,706 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 3, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 17:45:47,706 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 4, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 17:45:47,707 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 4, column 29] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,707 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 17, column 18] : ${table.mapperName} cannot be resolved.
+2020-07-29 17:45:47,707 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 26, column 72] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,707 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 34, column 55] : ${formQueryPara} cannot be resolved.
+2020-07-29 17:45:47,707 - Null reference [template 'package ${package.Entity};
+
+#foreach($pkg in ${table.importPackages})
+import ${pkg};
+#end
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * <p>  ${table.comment} </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+#if(${table.convert})
+@Data
+@ApiModel(description = "${table.comment}")
+@TableName("${table.name}")
+#end
+#if(${superEntityClass})
+public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}>#end {
+#elseif(${activeRecord})
+public class ${entity} extends Model<${entity}> {
+#else
+public class ${entity} implements Serializable {
+#end
+
+    private static final long serialVersionUID = 1L;
+
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})
+#set($keyPropertyName=${field.propertyName})
+#end
+#if("$!field.comment" != "")
+    /**
+     * ${field.comment}
+     */
+	@ApiModelProperty(value = "${field.comment}")
+#end
+#if(${field.keyFlag})
+	@TableId(value="${field.name}", type= IdType.AUTO)
+#else
+	@TableField("${field.name}")
+#end
+	private ${field.propertyType} ${field.propertyName};
+#end
+
+#if(${entityColumnConstant})
+#foreach($field in ${table.fields})
+	public static final String ${field.name.toUpperCase()} = "${field.name}";
+
+#end
+#end
+#if(${activeRecord})
+	@Override
+	protected Serializable pkVal() {
+#if(${keyPropertyName})
+		return this.${keyPropertyName};
+#else
+		return this.id;
+#end
+	}
+
+#end
+}
+', line 1, column 9] : ${package.Entity} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 2, column 9] : ${package.ServiceImpl} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 4, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 5, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 5, column 29] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 6, column 8] : ${package.Mapper} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 6, column 26] : ${table.mapperName} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 7, column 8] : ${package.Service} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 7, column 27] : ${table.serviceName} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 24, column 14] : ${table.serviceImplName} cannot be resolved.
+2020-07-29 18:05:11,156 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 24, column 72] : ${table.mapperName} cannot be resolved.
+2020-07-29 18:05:11,157 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 24, column 115] : ${table.serviceName} cannot be resolved.
+2020-07-29 18:05:11,157 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 27, column 5] : ${table.mapperName} cannot be resolved.
+2020-07-29 18:05:11,157 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 30, column 48] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,157 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 35, column 33] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 1, column 9] : ${package.Service} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 5, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 6, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 6, column 29] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 16, column 18] : ${table.serviceName} cannot be resolved.
+2020-07-29 18:05:11,158 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 25, column 41] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,159 - Null reference [template 'package ${package.Service};
+
+import com.baomidou.mybatisplus.plugins.Page;
+import ${superServiceClassPackage};
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+
+import java.util.List;
+
+/**
+ * <p>  ${table.comment} 服务类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+public interface ${table.serviceName} extends ${superServiceClass}<${entity}> {
+
+    /**
+     * ${table.comment}列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    void listPage(Page<${entity}> page, ${formQueryPara} filter);
+
+    /**
+     * 保存${table.comment}
+     *
+     * @param input
+     */
+    Integer save(${entity} input);
+
+    /**
+     * ${table.comment}列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> list(${formQueryPara} filter);
+}
+', line 40, column 26] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,161 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 3, column 20] : ${package.Mapper} cannot be resolved.
+2020-07-29 18:05:11,161 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 3, column 38] : ${table.mapperName} cannot be resolved.
+2020-07-29 18:05:11,161 - Null reference [template '<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+
+#end
+
+    <select id="select${entity}s" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM ${table.name}
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	${entity}_ID= #{filter.id}
+        </if>
+        ORDER BY ${entity}_ID DESC
+    </select>
+
+</mapper>
+', line 12, column 45] : ${package.Entity} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.QueryPara};
+
+import BasePageQuery;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * ${table.comment}查询参数
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ */
+@Data
+@ApiModel(description = "${table.comment}查询参数")
+public class ${formQueryPara} extends BasePageQuery{
+    @ApiModelProperty(value = "id")
+    private int id;
+}
+', line 1, column 9] : ${package.QueryPara} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.QueryPara};
+
+import BasePageQuery;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * ${table.comment}查询参数
+ *
+ * @author: zhengqing
+ * @description:
+ * @date: ${date}
+ */
+@Data
+@ApiModel(description = "${table.comment}查询参数")
+public class ${formQueryPara} extends BasePageQuery{
+    @ApiModelProperty(value = "id")
+    private int id;
+}
+', line 17, column 14] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 1, column 9] : ${package.Mapper} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 3, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 4, column 8] : ${package.QueryPara} cannot be resolved.
+2020-07-29 18:05:11,162 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 4, column 29] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,163 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 17, column 18] : ${table.mapperName} cannot be resolved.
+2020-07-29 18:05:11,163 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 26, column 72] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,163 - Null reference [template 'package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${superMapperClassPackage};
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} Mapper 接口 </p>
+ *
+ * @author : zhengqing
+ * @date : ${date}
+ */
+public interface ${table.mapperName} extends ${superMapperClass}<${entity}> {
+
+    /**
+     * 列表分页
+     *
+     * @param page
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(Pagination page, @Param("filter") ${formQueryPara} filter);
+
+    /**
+     * 列表
+     *
+     * @param filter
+     * @return
+     */
+    List<${entity}> select${entity}s(@Param("filter") ${formQueryPara} filter);
+}', line 34, column 55] : ${formQueryPara} cannot be resolved.
+2020-07-29 18:05:11,164 - Null reference [template 'package ${package.Entity};
+
+#foreach($pkg in ${table.importPackages})
+import ${pkg};
+#end
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+/**
+ * <p>  ${table.comment} </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+#if(${table.convert})
+@Data
+@ApiModel(description = "${table.comment}")
+@TableName("${table.name}")
+#end
+#if(${superEntityClass})
+public class ${entity} extends ${superEntityClass}#if(${activeRecord})<${entity}>#end {
+#elseif(${activeRecord})
+public class ${entity} extends Model<${entity}> {
+#else
+public class ${entity} implements Serializable {
+#end
+
+    private static final long serialVersionUID = 1L;
+
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})
+#set($keyPropertyName=${field.propertyName})
+#end
+#if("$!field.comment" != "")
+    /**
+     * ${field.comment}
+     */
+	@ApiModelProperty(value = "${field.comment}")
+#end
+#if(${field.keyFlag})
+	@TableId(value="${field.name}", type= IdType.AUTO)
+#else
+	@TableField("${field.name}")
+#end
+	private ${field.propertyType} ${field.propertyName};
+#end
+
+#if(${entityColumnConstant})
+#foreach($field in ${table.fields})
+	public static final String ${field.name.toUpperCase()} = "${field.name}";
+
+#end
+#end
+#if(${activeRecord})
+	@Override
+	protected Serializable pkVal() {
+#if(${keyPropertyName})
+		return this.${keyPropertyName};
+#else
+		return this.id;
+#end
+	}
+
+#end
+}
+', line 1, column 9] : ${package.Entity} cannot be resolved.
+2020-07-29 18:12:07,839 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 2, column 9] : ${package.ServiceImpl} cannot be resolved.
+2020-07-29 18:12:07,840 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 4, column 8] : ${package.Entity} cannot be resolved.
+2020-07-29 18:12:07,840 - Null reference [template '
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.QueryPara}.${formQueryPara};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import ${superServiceImplClassPackage};
+import com.baomidou.mybatisplus.plugins.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+/**
+ * <p> ${table.comment} 服务实现类 </p>
+ *
+ * @author: ${author}
+ * @date: ${date}
+ */
+@Service
+@Transactional
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    ${table.mapperName} ${entityPropertyName}Mapper;
+
+    @Override
+    public void listPage(Page<${entity}> page, ${formQueryPara} filter) {
+        page.setRecords(${entityPropertyName}Mapper.select${entity}s(page, filter));
+    }
+
+    @Override
+    public List<${entity}> list(${formQueryPara} filter) {
+        return ${entityPropertyName}Mapper.select${entity}s(filter);
+    }
+
+    @Override
+    public Integer save(${entity} para) {
+        if (para.get${entity}Id()!=null) {
+            ${entityPropertyName}Mapper.updateById(para);
+        } else {
+            ${entityPropertyName}Mapper.insert(para);
+        }
+        return para.get${entity}Id();
+    }
+}
+
+ ', line 5, column 8] : ${package.QueryPara} cannot be resolved.
