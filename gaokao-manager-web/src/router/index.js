@@ -13,8 +13,7 @@ import Layout from '@/views/layout/Layout'
 // import treeTableRouter from './modules/tree-table'
 // import nestedRouter from './modules/nested'
 
-// 代码生成器 -> 注：在最下面配合使用
-import codeGenerator from './modules/code-generator'
+
 // 系统管理
 import systemManage from "./modules/system-manage";
 // 高考管理
@@ -133,7 +132,7 @@ export const constantRoutes = [
 
 export default new Router({
   // mode: 'history', // require service support
-  base: 'code-generator',
+  base: 'gaokao-manage',
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
@@ -416,7 +415,7 @@ export const asyncRoutes = [
   //   ]
   // },
 
-  codeGenerator,
+  
   systemManage,
   gaokaoManage,
   { path: '*', redirect: '/404', hidden: true }

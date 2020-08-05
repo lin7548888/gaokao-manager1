@@ -40,9 +40,9 @@
         WHERE
              1 = 1
         <if test="filter.id!=null and filter.id!=''">
-            AND	id= #{filter.id}
+            AND	UserInfo_ID= #{filter.id}
         </if>
-        ORDER BY id DESC
+        ORDER BY UserInfo_ID DESC
     </select>
 
 </mapper>

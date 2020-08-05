@@ -19,6 +19,24 @@ const gaokaoManage = {
       component: () => import('@/views/gaokao-managerator/AppInfo'),
       name: 'APP管理',
       meta: { title: 'APP管理', icon: '', noCache: true, resources: 'appInfo' }
+    },
+    {
+      path: 'banner',
+      component: () => import('@/views/gaokao-managerator/Banner'),
+      name: 'Banner管理',
+      meta: { title: '轮播图管理', icon: '', noCache: true, resources: 'Banner' }
+    },
+    {
+      path: 'carouselMessage',
+      component: () => import('@/views/gaokao-managerator/CarouselMessage'),
+      name: 'CarouselMessage管理',
+      meta: { title: '最新动态管理', icon: '', noCache: true, resources: 'CarouselMessage' }
+    },
+    {
+      path: 'userInfo',
+      component: () => import('@/views/gaokao-managerator/UserInfo'),
+      name: 'UserInfo管理',
+      meta: { title: '用户管理', icon: '', noCache: true, resources: 'UserInfo' }
     }
   ]
 };

@@ -28,7 +28,7 @@ public class UserInfo extends Model<UserInfo> {
      * 用户id
      */
 	@ApiModelProperty(value = "用户id")
-	@TableId(value="id", type= IdType.ID_WORKER)
+	@TableId(value="id", type= IdType.AUTO)
 	private Long id;
     /**
      * 手机号，目前通过手机号+验证码登录

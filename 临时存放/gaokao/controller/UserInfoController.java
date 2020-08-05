@@ -1,7 +1,6 @@
 package cn.aesec.gaokaomanager.modules.gaokao.controller;
 
 import cn.aesec.gaokaomanager.modules.common.api.BaseController;
-import cn.aesec.gaokaomanager.modules.gaokao.entity.CarouselMessageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,14 +46,7 @@ public class UserInfoController extends BaseController {
         return ApiResult.ok("获取用户基本信息表列表成功",result);
     }
 
-    @PostMapping(value = "/changeStatus", produces = "application/json;charset=utf-8")
-    @ApiOperation(value = "改变发布状态", httpMethod = "POST", response = ApiResult.class)
-    public ApiResult changeStatus(@RequestBody UserInfo input) {
-        Integer id = userInfoService.save(input);
-        return ApiResult.ok(input.getStatus() == 1 ? "显示" : "不显示", id);
-    }
-
-    @PostMapping(value = "/saveOrUpdate", produces = "application/json;charset=utf-8")
+    @PostMapping(value = "/save", produces = "application/json;charset=utf-8")
     @ApiOperation(value = "保存用户基本信息表", httpMethod = "POST", response = ApiResult.class)
     public ApiResult save(@RequestBody UserInfo input) {
         Integer id = userInfoService.save(input);

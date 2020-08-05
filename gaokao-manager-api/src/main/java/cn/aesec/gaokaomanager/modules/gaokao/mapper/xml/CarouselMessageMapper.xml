@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.aesec.gaokaomanager.modules.gaokao.mapper.CarouselMessageInfoMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="cn.aesec.gaokaomanager.modules.gaokao.entity.CarouselMessageInfo">
+		<id column="id" property="id" />
+		<result column="order_id" property="orderId" />
+		<result column="message" property="message" />
+		<result column="type" property="type" />
+		<result column="status" property="status" />
+		<result column="c_time" property="cTime" />
+		<result column="c_user_id" property="cUserId" />
+	</resultMap>
+
+
+    <select id="selectCarouselMessageInfos" resultMap="BaseResultMap">
+        SELECT
+             *
+        FROM a_carousel_message_info
+        WHERE
+             1 = 1
+        <if test="filter.id!=null and filter.id!=''">
+            AND	id= #{filter.id}
+        </if>
+        ORDER BY id DESC
+    </select>
+
+</mapper>
